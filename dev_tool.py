@@ -14,36 +14,30 @@ Created on Thu Nov 25 21:54:50 2021
 @author: Priyadarshini Satish
 """
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 
 filename = 'coverage_table.txt'
-#data = np.loadtxt(filename, delimiter='|', skiprows=6, dtype=str, max_rows=32)
-#print(data)
 
 data = pd.read_csv(filename,
                    sep="|",
-                   engine='python')
-print(data.columns)
+                   engine='python',
+                   skiprows=1)
 data.columns = data.columns.str.strip()
-print(data.columns)
 
 for c in data.columns[1:] :
-    data[c] = data[c].str.lstrip() # strip leading space from all column data
-    data[c] = data[c].str.split(' ',1,expand = False) # Split Columns into two
+    data[c] = data[c].str.lstrip()  # strip leading space from all column data
+    data[c] = data[c].str.split(' ', 1, expand=False)  # Split Columns into two
 
 data = data.dropna()
 
-xAxis =  []
+xAxis = []
 yAxis = []
-for n in range(3,len(data['Lines'])) :
-    xAxis.append(float(data['Lines'][n][0].replace('%','')))
+for n in range(3, len(data['Lines'])):
+    xAxis.append(float(data['Lines'][n][0].replace('%', '')))
     yAxis.append(data[''][n])
 
-plotdata = pd.DataFrame(xAxis,yAxis)
-plotdata.plot(kind='bar')
-#plt.tick_params(axis='x', which='major', labelsize=5)
+plotData = pd.DataFrame(xAxis,yAxis)
+plotData.plot(kind='bar')
+# plt.tick_params(axis='x', which='major', labelsize=5)
 plt.xticks(rotation=90)
-
-#data["Lines"] = data["Lines"].str.split(' ',1,expand = False)
-#print(data['Lines_split'][3])
+plt.show()
