@@ -1,0 +1,182 @@
+Reading tracefile coverage.info
+                                          |Lines       |Functions  |Branches    
+Filename                                  |Rate     Num|Rate    Num|Rate     Num
+================================================================================
+[/__w/libSMCE/libSMCE/]
+include/Ardrivo/MQTT.h                    | 0.0%      1| 0.0%     1|    -      0
+include/Ardrivo/SD.h                      | 100%      2| 100%     2|    -      0
+include/Ardrivo/Stream.h                  | 100%      1| 100%     1|    -      0
+include/Ardrivo/WString.h                 | 100%      3| 100%     1|    -      0
+include/Ardrivo/WiFi.h                    | 0.0%     13| 0.0%    12|    -      0
+include/SMCE/Board.hpp                    | 100%      4| 100%     2|    -      0
+include/SMCE/BoardView.hpp                |94.4%     18|94.1%    17|    -      0
+include/SMCE/Sketch.hpp                   | 100%      3| 100%     2|    -      0
+include/SMCE/Toolchain.hpp                |66.7%      3|66.7%     3|    -      0
+include/SMCE/internal/BoardData.hpp       |25.0%      8|10.0%    20|    -      0
+include/SMCE/internal/SharedBoardData.hpp | 100%      2| 100%     2|    -      0
+include/SMCE/internal/portable/scope.hpp  |83.3%      6| 100%     2|    -      0
+include/SMCE/internal/utils.hpp           | 0.0%      2| 0.0%     1|    -      0
+src/Ardrivo/Arduino.cpp                   |44.3%     79|35.7%    14|    -      0
+src/Ardrivo/HardwareSerial.cpp            |47.6%     42|63.6%    11|    -      0
+src/Ardrivo/MQTT.cpp                      | 6.6%     76| 9.5%    21|    -      0
+src/Ardrivo/OV767X.cpp                    | 2.3%     87|13.3%    15|    -      0
+src/Ardrivo/Print.cpp                     |34.8%     23|31.2%    16|    -      0
+src/Ardrivo/SD.cpp                        |19.6%    219|26.9%    26|    -      0
+src/Ardrivo/SMCE_main.cpp                 |77.3%     22| 100%     2|    -      0
+src/Ardrivo/Stream.cpp                    | 8.4%     83|14.3%     7|    -      0
+src/Ardrivo/String.cpp                    | 5.4%     92| 9.1%    55|    -      0
+src/Ardrivo/UDDRuntime.cpp                | 100%      3| 100%     1|    -      0
+src/SMCE/Board.cpp                        |97.1%    136|94.7%    19|    -      0
+src/SMCE/BoardConf.cpp                    | 0.0%     17| 0.0%     7|    -      0
+src/SMCE/BoardData.cpp                    |98.9%     88| 100%     4|    -      0
+src/SMCE/BoardDeviceView.cpp              |95.2%     21| 100%     3|    -      0
+src/SMCE/BoardView.cpp                    |95.7%    303|94.6%    56|    -      0
+src/SMCE/PluginManifest.cpp               |96.6%     29| 100%     4|    -      0
+src/SMCE/SharedBoardData.cpp              |95.7%     23| 100%     4|    -      0
+src/SMCE/Sketch.cpp                       | 100%      5| 100%     1|    -      0
+src/SMCE/Toolchain.cpp                    |75.6%    172|73.3%    15|    -      0
+src/SMCE/UDDRuntime.cpp                   | 100%      2| 100%     1|    -      0
+src/SMCE/Uuid.cpp                         | 100%     21| 100%     5|    -      0
+src/SMCE_rt/BindGenProxies.cpp            |18.2%     11|18.2%    11|    -      0
+include/Ardrivo/MQTT.h                    | 0.0%      1| 0.0%     1|    -      0
+include/Ardrivo/SD.h                      | 100%      2| 100%     2|    -      0
+include/Ardrivo/Stream.h                  | 100%      1| 100%     1|    -      0
+include/Ardrivo/WString.h                 | 100%      3| 100%     1|    -      0
+include/Ardrivo/WiFi.h                    | 0.0%     13| 0.0%    12|    -      0
+include/SMCE/Board.hpp                    | 100%      4| 100%     2|    -      0
+include/SMCE/BoardView.hpp                |94.4%     18|94.1%    17|    -      0
+include/SMCE/Sketch.hpp                   | 100%      3| 100%     2|    -      0
+include/SMCE/Toolchain.hpp                |66.7%      3|66.7%     3|    -      0
+include/SMCE/internal/BoardData.hpp       |25.0%      8|10.0%    20|    -      0
+include/SMCE/internal/SharedBoardData.hpp | 100%      2| 100%     2|    -      0
+include/SMCE/internal/portable/scope.hpp  |83.3%      6| 100%     2|    -      0
+include/SMCE/internal/utils.hpp           | 0.0%      2| 0.0%     1|    -      0
+src/Ardrivo/Arduino.cpp                   |44.3%     79|35.7%    14|    -      0
+src/Ardrivo/HardwareSerial.cpp            |47.6%     42|63.6%    11|    -      0
+src/Ardrivo/MQTT.cpp                      | 6.6%     76| 9.5%    21|    -      0
+src/Ardrivo/OV767X.cpp                    | 2.3%     87|13.3%    15|    -      0
+src/Ardrivo/Print.cpp                     |34.8%     23|31.2%    16|    -      0
+src/Ardrivo/SD.cpp                        |19.6%    219|26.9%    26|    -      0
+src/Ardrivo/SMCE_main.cpp                 |77.3%     22| 100%     2|    -      0
+src/Ardrivo/Stream.cpp                    | 8.4%     83|14.3%     7|    -      0
+src/Ardrivo/String.cpp                    | 5.4%     92| 9.1%    55|    -      0
+src/Ardrivo/UDDRuntime.cpp                | 100%      3| 100%     1|    -      0
+src/SMCE/Board.cpp                        |97.1%    136|94.7%    19|    -      0
+src/SMCE/BoardConf.cpp                    | 0.0%     17| 0.0%     7|    -      0
+src/SMCE/BoardData.cpp                    |98.9%     88| 100%     4|    -      0
+src/SMCE/BoardDeviceView.cpp              |95.2%     21| 100%     3|    -      0
+src/SMCE/BoardView.cpp                    |95.7%    303|94.6%    56|    -      0
+src/SMCE/PluginManifest.cpp               |96.6%     29| 100%     4|    -      0
+src/SMCE/SharedBoardData.cpp              |95.7%     23| 100%     4|    -      0
+src/SMCE/Sketch.cpp                       | 100%      5| 100%     1|    -      0
+src/SMCE/Toolchain.cpp                    |75.6%    172|73.3%    15|    -      0
+src/SMCE/UDDRuntime.cpp                   | 100%      2| 100%     1|    -      0
+src/SMCE/Uuid.cpp                         | 100%     21| 100%     5|    -      0
+src/SMCE_rt/BindGenProxies.cpp            |18.2%     11|18.2%    11|    -      0
+include/Ardrivo/MQTT.h                    | 0.0%      1| 0.0%     1|    -      0
+include/Ardrivo/SD.h                      | 100%      2| 100%     2|    -      0
+include/Ardrivo/Stream.h                  | 100%      1| 100%     1|    -      0
+include/Ardrivo/WString.h                 | 100%      3| 100%     1|    -      0
+include/Ardrivo/WiFi.h                    | 0.0%     13| 0.0%    12|    -      0
+include/SMCE/Board.hpp                    | 100%      4| 100%     2|    -      0
+include/SMCE/BoardView.hpp                |94.4%     18|94.1%    17|    -      0
+include/SMCE/Sketch.hpp                   | 100%      3| 100%     2|    -      0
+include/SMCE/Toolchain.hpp                |66.7%      3|66.7%     3|    -      0
+include/SMCE/internal/BoardData.hpp       |25.0%      8|10.0%    20|    -      0
+include/SMCE/internal/SharedBoardData.hpp | 100%      2| 100%     2|    -      0
+include/SMCE/internal/portable/scope.hpp  |83.3%      6| 100%     2|    -      0
+include/SMCE/internal/utils.hpp           | 0.0%      2| 0.0%     1|    -      0
+src/Ardrivo/Arduino.cpp                   |44.3%     79|35.7%    14|    -      0
+src/Ardrivo/HardwareSerial.cpp            |47.6%     42|63.6%    11|    -      0
+src/Ardrivo/MQTT.cpp                      | 6.6%     76| 9.5%    21|    -      0
+src/Ardrivo/OV767X.cpp                    | 2.3%     87|13.3%    15|    -      0
+src/Ardrivo/Print.cpp                     |34.8%     23|31.2%    16|    -      0
+src/Ardrivo/SD.cpp                        |19.6%    219|26.9%    26|    -      0
+src/Ardrivo/SMCE_main.cpp                 |77.3%     22| 100%     2|    -      0
+src/Ardrivo/Stream.cpp                    | 8.4%     83|14.3%     7|    -      0
+src/Ardrivo/String.cpp                    | 5.4%     92| 9.1%    55|    -      0
+src/Ardrivo/UDDRuntime.cpp                | 100%      3| 100%     1|    -      0
+src/SMCE/Board.cpp                        |97.1%    136|94.7%    19|    -      0
+src/SMCE/BoardConf.cpp                    | 0.0%     17| 0.0%     7|    -      0
+src/SMCE/BoardData.cpp                    |98.9%     88| 100%     4|    -      0
+src/SMCE/BoardDeviceView.cpp              |95.2%     21| 100%     3|    -      0
+src/SMCE/BoardView.cpp                    |95.7%    303|94.6%    56|    -      0
+src/SMCE/PluginManifest.cpp               |96.6%     29| 100%     4|    -      0
+src/SMCE/SharedBoardData.cpp              |95.7%     23| 100%     4|    -      0
+src/SMCE/Sketch.cpp                       | 100%      5| 100%     1|    -      0
+src/SMCE/Toolchain.cpp                    |75.6%    172|73.3%    15|    -      0
+src/SMCE/UDDRuntime.cpp                   | 100%      2| 100%     1|    -      0
+src/SMCE/Uuid.cpp                         | 100%     21| 100%     5|    -      0
+src/SMCE_rt/BindGenProxies.cpp            |18.2%     11|18.2%    11|    -      0
+include/Ardrivo/MQTT.h                    | 0.0%      1| 0.0%     1|    -      0
+include/Ardrivo/SD.h                      | 100%      2| 100%     2|    -      0
+include/Ardrivo/Stream.h                  | 100%      1| 100%     1|    -      0
+include/Ardrivo/WString.h                 | 100%      3| 100%     1|    -      0
+include/Ardrivo/WiFi.h                    | 0.0%     13| 0.0%    12|    -      0
+include/SMCE/Board.hpp                    | 100%      4| 100%     2|    -      0
+include/SMCE/BoardView.hpp                |94.4%     18|94.1%    17|    -      0
+include/SMCE/Sketch.hpp                   | 100%      3| 100%     2|    -      0
+include/SMCE/Toolchain.hpp                |66.7%      3|66.7%     3|    -      0
+include/SMCE/internal/BoardData.hpp       |25.0%      8|10.0%    20|    -      0
+include/SMCE/internal/SharedBoardData.hpp | 100%      2| 100%     2|    -      0
+include/SMCE/internal/portable/scope.hpp  |83.3%      6| 100%     2|    -      0
+include/SMCE/internal/utils.hpp           | 0.0%      2| 0.0%     1|    -      0
+src/Ardrivo/Arduino.cpp                   |44.3%     79|35.7%    14|    -      0
+src/Ardrivo/HardwareSerial.cpp            |47.6%     42|63.6%    11|    -      0
+src/Ardrivo/MQTT.cpp                      | 6.6%     76| 9.5%    21|    -      0
+src/Ardrivo/OV767X.cpp                    | 2.3%     87|13.3%    15|    -      0
+src/Ardrivo/Print.cpp                     |34.8%     23|31.2%    16|    -      0
+src/Ardrivo/SD.cpp                        |19.6%    219|26.9%    26|    -      0
+src/Ardrivo/SMCE_main.cpp                 |77.3%     22| 100%     2|    -      0
+src/Ardrivo/Stream.cpp                    | 8.4%     83|14.3%     7|    -      0
+src/Ardrivo/String.cpp                    | 5.4%     92| 9.1%    55|    -      0
+src/Ardrivo/UDDRuntime.cpp                | 100%      3| 100%     1|    -      0
+src/SMCE/Board.cpp                        |97.1%    136|94.7%    19|    -      0
+src/SMCE/BoardConf.cpp                    | 0.0%     17| 0.0%     7|    -      0
+src/SMCE/BoardData.cpp                    |98.9%     88| 100%     4|    -      0
+src/SMCE/BoardDeviceView.cpp              |95.2%     21| 100%     3|    -      0
+src/SMCE/BoardView.cpp                    |95.7%    303|94.6%    56|    -      0
+src/SMCE/PluginManifest.cpp               |96.6%     29| 100%     4|    -      0
+src/SMCE/SharedBoardData.cpp              |95.7%     23| 100%     4|    -      0
+src/SMCE/Sketch.cpp                       | 100%      5| 100%     1|    -      0
+src/SMCE/Toolchain.cpp                    |75.6%    172|73.3%    15|    -      0
+src/SMCE/UDDRuntime.cpp                   | 100%      2| 100%     1|    -      0
+src/SMCE/Uuid.cpp                         | 100%     21| 100%     5|    -      0
+src/SMCE_rt/BindGenProxies.cpp            |18.2%     11|18.2%    11|    -      0
+include/Ardrivo/MQTT.h                    | 0.0%      1| 0.0%     1|    -      0
+include/Ardrivo/SD.h                      | 100%      2| 100%     2|    -      0
+include/Ardrivo/Stream.h                  | 100%      1| 100%     1|    -      0
+include/Ardrivo/WString.h                 | 100%      3| 100%     1|    -      0
+include/Ardrivo/WiFi.h                    | 0.0%     13| 0.0%    12|    -      0
+include/SMCE/Board.hpp                    | 100%      4| 100%     2|    -      0
+include/SMCE/BoardView.hpp                |94.4%     18|94.1%    17|    -      0
+include/SMCE/Sketch.hpp                   | 100%      3| 100%     2|    -      0
+include/SMCE/Toolchain.hpp                |66.7%      3|66.7%     3|    -      0
+include/SMCE/internal/BoardData.hpp       |25.0%      8|10.0%    20|    -      0
+include/SMCE/internal/SharedBoardData.hpp | 100%      2| 100%     2|    -      0
+include/SMCE/internal/portable/scope.hpp  |83.3%      6| 100%     2|    -      0
+include/SMCE/internal/utils.hpp           | 0.0%      2| 0.0%     1|    -      0
+src/Ardrivo/Arduino.cpp                   |44.3%     79|35.7%    14|    -      0
+src/Ardrivo/HardwareSerial.cpp            |47.6%     42|63.6%    11|    -      0
+src/Ardrivo/MQTT.cpp                      | 6.6%     76| 9.5%    21|    -      0
+src/Ardrivo/OV767X.cpp                    | 2.3%     87|13.3%    15|    -      0
+src/Ardrivo/Print.cpp                     |34.8%     23|31.2%    16|    -      0
+src/Ardrivo/SD.cpp                        |19.6%    219|26.9%    26|    -      0
+src/Ardrivo/SMCE_main.cpp                 |77.3%     22| 100%     2|    -      0
+src/Ardrivo/Stream.cpp                    | 8.4%     83|14.3%     7|    -      0
+src/Ardrivo/String.cpp                    | 5.4%     92| 9.1%    55|    -      0
+src/Ardrivo/UDDRuntime.cpp                | 100%      3| 100%     1|    -      0
+src/SMCE/Board.cpp                        |97.1%    136|94.7%    19|    -      0
+src/SMCE/BoardConf.cpp                    | 0.0%     17| 0.0%     7|    -      0
+src/SMCE/BoardData.cpp                    |98.9%     88| 100%     4|    -      0
+src/SMCE/BoardDeviceView.cpp              |95.2%     21| 100%     3|    -      0
+src/SMCE/BoardView.cpp                    |95.7%    303|94.6%    56|    -      0
+src/SMCE/PluginManifest.cpp               |96.6%     29| 100%     4|    -      0
+src/SMCE/SharedBoardData.cpp              |95.7%     23| 100%     4|    -      0
+src/SMCE/Sketch.cpp                       | 100%      5| 100%     1|    -      0
+src/SMCE/Toolchain.cpp                    |75.6%    172|73.3%    15|    -      0
+src/SMCE/UDDRuntime.cpp                   | 100%      2| 100%     1|    -      0
+src/SMCE/Uuid.cpp                         | 100%     21| 100%     5|    -      0
+src/SMCE_rt/BindGenProxies.cpp            |18.2%     11|18.2%    11|    -      0
+================================================================================
+                                    Total:|57.1%   1620|48.1%   364|    -      0
