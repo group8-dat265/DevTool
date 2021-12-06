@@ -6,7 +6,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Group 8 DevTool\nCreate a graph for code coverage from file')
 parser.add_argument('-f', '--file', default='coverage_table.txt', help='Input file, default "coverage_table.txt"',
                     type=str, required=False)
-parser.add_argument('-r', '--ratio', default=False, help='Sort xAxis by coverage ratio, default false',
+parser.add_argument('-r', '--ratio', default=False, help='Sort x-axis by coverage ratio, default sort by x-label',
                     action='store_true', required=False)
 parser.add_argument('-d', '--descending', default=False, help='Ascending sort, default ascending', action='store_true',
                     required=False)
@@ -38,28 +38,27 @@ for c in data.columns[1:]:
 data = data.dropna()
 # print(data)
 
-xAxis = []
-yAxis = []
+path = []
+ratio = []
+plotInput = {'Path': path, 'Ratio': ratio}
 for n in range(3, len(data['Lines'])):
-    yAxis.append(float(data['Lines'][n][0].replace('%', '')))
+    ratio.append(float(data['Lines'][n][0].replace('%', '')))
     xData = data[''][n]
     if not centered_labels:
         xData = xData.strip()
-    xAxis.append(xData)
-# print(xAxis)
-# print(yAxis)
+    path.append(xData)
 
-plotData = pd.DataFrame(yAxis, index=xAxis)
+plotData = pd.DataFrame(plotInput)
+plotData.set_index('Path', inplace=True)  # Set path as x-axis
 # print(plotData)
 # print(list(plotData))
-# print(plotData[0])
 
 if sort:
     if sort_by_ratio:
-        plotData.sort_values(by=0, inplace=True, ascending=ascending)  # Sort by ratio
+        plotData.sort_values(by='Ratio', inplace=True, ascending=ascending)  # Sort by ratio
     else:
-        plotData.sort_index(key=lambda x: x.str.lower(), inplace=True, ascending=ascending)  # Sort by file name
+        plotData.sort_index(key=lambda x: x.str.lower(), inplace=True, ascending=ascending)  # Sort by label
 
-plotData.plot(kind='bar', figsize=(0.5 + len(xAxis)/3, 10), title='Code coverage ratio by file', xlabel='File',
+plotData.plot(kind='bar', figsize=(0.5 + len(path) / 3, 10), title='Code coverage ratio by file', xlabel='Path',
               ylabel='Ratio', legend=False)  # stacked=True
 plt.show()
