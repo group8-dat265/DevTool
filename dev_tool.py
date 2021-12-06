@@ -12,6 +12,8 @@ parser.add_argument('-d', '--descending', default=False, help='Ascending sort, d
                     required=False)
 parser.add_argument('-ns', '--no_sort', default=False, help='Skip sort (ignores other sort args), default False',
                     action='store_true', required=False)
+parser.add_argument('-cl', '--centered_labels', default=False, help='Center labels, default False',
+                    action='store_true', required=False)
 parser.add_argument('-s', '--separator', default='|', help='File column separator, default "|"', type=str,
                     required=False)  # Untested
 parser.add_argument('-sr', '--skip_rows', default=1, help='Lines to skip in file, default 1', type=int,
@@ -21,9 +23,10 @@ filename = args['file']
 # filename = 'coverage_table - Large.txt'
 sort_by_ratio = args['ratio']
 ascending = not args['descending']
+sort = not args['no_sort']
+centered_labels = args['centered_labels']
 separator = args['separator']
 skip_rows = args['skip_rows']
-no_sort = args['no_sort']
 
 data = pd.read_csv(filename, sep=separator, engine='python', skiprows=skip_rows)
 data.columns = data.columns.str.strip()
@@ -39,7 +42,10 @@ xAxis = []
 yAxis = []
 for n in range(3, len(data['Lines'])):
     yAxis.append(float(data['Lines'][n][0].replace('%', '')))
-    xAxis.append(data[''][n].strip())  # Remove strip to center all labels
+    xData = data[''][n]
+    if not centered_labels:
+        xData = xData.strip()
+    xAxis.append(xData)
 # print(xAxis)
 # print(yAxis)
 
@@ -48,12 +54,12 @@ plotData = pd.DataFrame(yAxis, index=xAxis)
 # print(list(plotData))
 # print(plotData[0])
 
-if not no_sort:
+if sort:
     if sort_by_ratio:
         plotData.sort_values(by=0, inplace=True, ascending=ascending)  # Sort by ratio
     else:
         plotData.sort_index(key=lambda x: x.str.lower(), inplace=True, ascending=ascending)  # Sort by file name
 
-plotData.plot(kind='bar', figsize=(len(xAxis)/3, 10), title='Code coverage ratio by file', xlabel='File',
+plotData.plot(kind='bar', figsize=(0.5 + len(xAxis)/3, 10), title='Code coverage ratio by file', xlabel='File',
               ylabel='Ratio', legend=False)  # stacked=True
 plt.show()
