@@ -1,0 +1,11 @@
+# Venv
+venv/
+
+# IDE
+.idea/
+
+# Generated files by tool
+*.html
+
+# CodeCov garbage
+*ipynb
