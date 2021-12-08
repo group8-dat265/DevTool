@@ -21,7 +21,7 @@ parser.add_argument('-cl', '--centered_labels', default=False, help='Center labe
 parser.add_argument('-ni', '--non_interactive', default=False,
                     help='Generate non interactive graph using pandas instead of pandas_bokeh, doesnt support package'
                          ' graphs, default False', action='store_true', required=False)
-parser.add_argument('-pp', '--plot_package', type=str, required=False,
+parser.add_argument('-p', '--plot_package', type=str, required=False,
                     help='Plot given packages separated by "," , default plots everything in one graph')
 parser.add_argument('-nc', '--no_complete', default=False, help='No graph with ratio for all paths, default False',
                     required=False, action='store_true')
@@ -38,7 +38,6 @@ elif non_interactive:
     out_filename = 'coverage_graph.png'
 else:
     out_filename = 'coverage_graph.html'
-# filename = 'coverage_table - Large.txt'
 sort_by_ratio = args['ratio']
 ascending = not args['descending']
 sort = not args['no_sort']

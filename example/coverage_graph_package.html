@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="7f016551-707e-4f6c-a22f-33a5256b54c5" data-root-id="1209"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1418">
+          {"761c8619-7a6b-4097-93c1-4f54ec9bd7de":{"defs":[],"roots":{"references":[{"attributes":{"code":"\n                                    var labels = {0: 'src/Ardrivo/Arduino.cpp', 1: 'src/Ardrivo/HardwareSerial.cpp', 2: 'src/Ardrivo/MQTT.cpp', 3: 'src/Ardrivo/OV767X.cpp', 4: 'src/Ardrivo/Print.cpp', 5: 'src/Ardrivo/SD.cpp', 6: 'src/Ardrivo/SMCE_main.cpp', 7: 'src/Ardrivo/Stream.cpp', 8: 'src/Ardrivo/String.cpp', 9: 'src/Ardrivo/UDDRuntime.cpp', 10: 'src/SMCE/Board.cpp', 11: 'src/SMCE/BoardConf.cpp', 12: 'src/SMCE/BoardData.cpp', 13: 'src/SMCE/BoardDeviceView.cpp', 14: 'src/SMCE/BoardView.cpp', 15: 'src/SMCE/PluginManifest.cpp', 16: 'src/SMCE/SharedBoardData.cpp', 17: 'src/SMCE/Sketch.cpp', 18: 'src/SMCE/Toolchain.cpp', 19: 'src/SMCE/UDDRuntime.cpp', 20: 'src/SMCE/Uuid.cpp'};\n                                    return labels[tick];\n                                    "},"id":"1071","type":"FuncTickFormatter"},{"attributes":{"coordinates":null,"group":null,"text":"Code coverage for \"src\" package"},"id":"1039","type":"Title"},{"attributes":{"range":{"id":"1041"}},"id":"1073","type":"Dodge"},{"attributes":{"axis":{"id":"1053"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"1056","type":"Grid"},{"attributes":{"axis_label":"Ratio","axis_label_text_font_size":"15pt","coordinates":null,"formatter":{"id":"1082"},"group":null,"major_label_policy":{"id":"1083"},"major_label_text_font_size":"10pt","ticker":{"id":"1054"}},"id":"1053","type":"LinearAxis"},{"attributes":{},"id":"1180","type":"Selection"},{"attributes":{},"id":"1054","type":"BasicTicker"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"1171"}],"tooltips":[["Path","@__x__values_original"],["Ratio","@{Ratio}"]]},"id":"1184","type":"HoverTool"},{"attributes":{},"id":"1062","type":"HelpTool"},{"attributes":{},"id":"1057","type":"PanTool"},{"attributes":{"overlay":{"id":"1063"}},"id":"1059","type":"BoxZoomTool"},{"attributes":{},"id":"1060","type":"SaveTool"},{"attributes":{},"id":"1061","type":"ResetTool"},{"attributes":{"below":[{"id":"1049"}],"center":[{"id":"1052"},{"id":"1056"},{"id":"1089"}],"height":700,"left":[{"id":"1053"}],"output_backend":"webgl","renderers":[{"id":"1078"}],"sizing_mode":"fixed","title":{"id":"1039"},"toolbar":{"id":"1064"},"toolbar_location":null,"width":900,"x_range":{"id":"1041"},"x_scale":{"id":"1045"},"y_range":{"id":"1043"},"y_scale":{"id":"1047"}},"id":"1038","subtype":"Figure","type":"Plot"},{"attributes":{"below":[{"id":"1142"}],"center":[{"id":"1145"},{"id":"1149"},{"id":"1182"}],"height":700,"left":[{"id":"1146"}],"output_backend":"webgl","renderers":[{"id":"1171"}],"sizing_mode":"fixed","title":{"id":"1132"},"toolbar":{"id":"1157"},"toolbar_location":null,"width":900,"x_range":{"id":"1134"},"x_scale":{"id":"1138"},"y_range":{"id":"1136"},"y_scale":{"id":"1140"}},"id":"1131","subtype":"Figure","type":"Plot"},{"attributes":{"coordinates":null,"group":null,"text":"Code coverage for \"include\" package"},"id":"1132","type":"Title"},{"attributes":{"bottom_units":"screen","coordinates":null,"fill_alpha":0.5,"fill_color":"lightgrey","group":null,"left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"1063","type":"BoxAnnotation"},{"attributes":{"toolbar":{"id":"1207"},"toolbar_location":"above"},"id":"1208","type":"ToolbarBox"},{"attributes":{},"id":"1176","type":"AllLabels"},{"attributes":{},"id":"1138","type":"LinearScale"},{"attributes":{},"id":"1134","type":"DataRange1d"},{"attributes":{},"id":"1087","type":"Selection"},{"attributes":{},"id":"1178","type":"AllLabels"},{"attributes":{"children":[{"id":"1208"},{"id":"1206"}]},"id":"1209","type":"Column"},{"attributes":{},"id":"1179","type":"UnionRenderers"},{"attributes":{},"id":"1140","type":"LinearScale"},{"attributes":{"axis":{"id":"1142"},"coordinates":null,"group":null,"ticker":null},"id":"1145","type":"Grid"},{"attributes":{"label":{"value":" Ratio"},"renderers":[{"id":"1171"}]},"id":"1183","type":"LegendItem"},{"attributes":{"click_policy":"hide","coordinates":null,"group":null,"items":[{"id":"1183"}],"visible":false},"id":"1182","type":"Legend"},{"attributes":{},"id":"1136","type":"DataRange1d"},{"attributes":{"axis_label":"Path","axis_label_text_font_size":"15pt","coordinates":null,"formatter":{"id":"1164"},"group":null,"major_label_orientation":1.5707963267948966,"major_label_policy":{"id":"1178"},"major_label_text_font_size":"10pt","ticker":{"id":"1186"}},"id":"1142","type":"LinearAxis"},{"attributes":{"source":{"id":"1130"}},"id":"1172","type":"CDSView"},{"attributes":{},"id":"1151","type":"WheelZoomTool"},{"attributes":{"label":{"value":" Ratio"},"renderers":[{"id":"1078"}]},"id":"1090","type":"LegendItem"},{"attributes":{},"id":"1045","type":"LinearScale"},{"attributes":{"source":{"id":"1037"}},"id":"1079","type":"CDSView"},{"attributes":{"coordinates":null,"data_source":{"id":"1130"},"glyph":{"id":"1168"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1170"},"nonselection_glyph":{"id":"1169"},"view":{"id":"1172"}},"id":"1171","type":"GlyphRenderer"},{"attributes":{"fill_color":{"value":"#1f77b4"},"hatch_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"top":{"field":"Ratio"},"width":{"value":0.7},"x":{"field":"__x__values","transform":{"id":"1073"}}},"id":"1075","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"1037"},"glyph":{"id":"1075"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1077"},"nonselection_glyph":{"id":"1076"},"view":{"id":"1079"}},"id":"1078","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.1},"hatch_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"top":{"field":"Ratio"},"width":{"value":0.7},"x":{"field":"__x__values","transform":{"id":"1166"}}},"id":"1169","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.2},"hatch_color":{"value":"#1f77b4"},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"top":{"field":"Ratio"},"width":{"value":0.7},"x":{"field":"__x__values","transform":{"id":"1073"}}},"id":"1077","type":"VBar"},{"attributes":{"fill_color":{"value":"#1f77b4"},"hatch_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"top":{"field":"Ratio"},"width":{"value":0.7},"x":{"field":"__x__values","transform":{"id":"1166"}}},"id":"1168","type":"VBar"},{"attributes":{"active_scroll":{"id":"1058"},"tools":[{"id":"1057"},{"id":"1058"},{"id":"1059"},{"id":"1060"},{"id":"1061"},{"id":"1062"},{"id":"1091"}]},"id":"1064","type":"Toolbar"},{"attributes":{},"id":"1175","type":"BasicTickFormatter"},{"attributes":{"data":{"Ratio":{"__ndarray__":"AAAAAAAAAAAAAAAAAABZQAAAAAAAAFlAAAAAAAAAAAAAAAAAAABZQAAAAAAAAFlAmpmZmZmZV0AAAAAAAAA5QDMzMzMz01RAAAAAAAAAWUAAAAAAAAAAAAAAAAAAAFlAzczMzMysUEA=","dtype":"float64","order":"little","shape":[13]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12],"__x__values_original":["include/Ardrivo/MQTT.h","include/Ardrivo/SD.h","include/Ardrivo/Stream.h","include/Ardrivo/WiFi.h","include/Ardrivo/WString.h","include/SMCE/Board.hpp","include/SMCE/BoardView.hpp","include/SMCE/internal/BoardData.hpp","include/SMCE/internal/portable/scope.hpp","include/SMCE/internal/SharedBoardData.hpp","include/SMCE/internal/utils.hpp","include/SMCE/Sketch.hpp","include/SMCE/Toolchain.hpp"]},"selected":{"id":"1180"},"selection_policy":{"id":"1179"}},"id":"1130","type":"ColumnDataSource"},{"attributes":{"range":{"id":"1134"}},"id":"1166","type":"Dodge"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.2},"hatch_color":{"value":"#1f77b4"},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"top":{"field":"Ratio"},"width":{"value":0.7},"x":{"field":"__x__values","transform":{"id":"1166"}}},"id":"1170","type":"VBar"},{"attributes":{"children":[[{"id":"1038"},0,0],[{"id":"1131"},0,1]]},"id":"1206","type":"GridBox"},{"attributes":{"data":{"Ratio":{"__ndarray__":"ZmZmZmYmRkDNzMzMzMxHQGZmZmZmZhpAZmZmZmZmAkBmZmZmZmZBQJqZmZmZmTNAMzMzMzNTU0DNzMzMzMwgQJqZmZmZmRVAAAAAAAAAWUBmZmZmZkZYQAAAAAAAAAAAmpmZmZm5WEDNzMzMzMxXQM3MzMzM7FdAZmZmZmYmWEDNzMzMzOxXQAAAAAAAAFlAZmZmZmbmUkAAAAAAAABZQAAAAAAAAFlA","dtype":"float64","order":"little","shape":[21]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"__x__values_original":["src/Ardrivo/Arduino.cpp","src/Ardrivo/HardwareSerial.cpp","src/Ardrivo/MQTT.cpp","src/Ardrivo/OV767X.cpp","src/Ardrivo/Print.cpp","src/Ardrivo/SD.cpp","src/Ardrivo/SMCE_main.cpp","src/Ardrivo/Stream.cpp","src/Ardrivo/String.cpp","src/Ardrivo/UDDRuntime.cpp","src/SMCE/Board.cpp","src/SMCE/BoardConf.cpp","src/SMCE/BoardData.cpp","src/SMCE/BoardDeviceView.cpp","src/SMCE/BoardView.cpp","src/SMCE/PluginManifest.cpp","src/SMCE/SharedBoardData.cpp","src/SMCE/Sketch.cpp","src/SMCE/Toolchain.cpp","src/SMCE/UDDRuntime.cpp","src/SMCE/Uuid.cpp"]},"selected":{"id":"1087"},"selection_policy":{"id":"1086"}},"id":"1037","type":"ColumnDataSource"},{"attributes":{"active_scroll":{"id":"1151"},"tools":[{"id":"1150"},{"id":"1151"},{"id":"1152"},{"id":"1153"},{"id":"1154"},{"id":"1155"},{"id":"1184"}]},"id":"1157","type":"Toolbar"},{"attributes":{},"id":"1082","type":"BasicTickFormatter"},{"attributes":{"click_policy":"hide","coordinates":null,"group":null,"items":[{"id":"1090"}],"visible":false},"id":"1089","type":"Legend"},{"attributes":{},"id":"1083","type":"AllLabels"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"1078"}],"tooltips":[["Path","@__x__values_original"],["Ratio","@{Ratio}"]]},"id":"1091","type":"HoverTool"},{"attributes":{},"id":"1041","type":"DataRange1d"},{"attributes":{"bottom_units":"screen","coordinates":null,"fill_alpha":0.5,"fill_color":"lightgrey","group":null,"left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"1156","type":"BoxAnnotation"},{"attributes":{},"id":"1154","type":"ResetTool"},{"attributes":{},"id":"1047","type":"LinearScale"},{"attributes":{"code":"\n                                    var labels = {0: 'include/Ardrivo/MQTT.h', 1: 'include/Ardrivo/SD.h', 2: 'include/Ardrivo/Stream.h', 3: 'include/Ardrivo/WiFi.h', 4: 'include/Ardrivo/WString.h', 5: 'include/SMCE/Board.hpp', 6: 'include/SMCE/BoardView.hpp', 7: 'include/SMCE/internal/BoardData.hpp', 8: 'include/SMCE/internal/portable/scope.hpp', 9: 'include/SMCE/internal/SharedBoardData.hpp', 10: 'include/SMCE/internal/utils.hpp', 11: 'include/SMCE/Sketch.hpp', 12: 'include/SMCE/Toolchain.hpp'};\n                                    return labels[tick];\n                                    "},"id":"1164","type":"FuncTickFormatter"},{"attributes":{},"id":"1153","type":"SaveTool"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]},"id":"1093","type":"FixedTicker"},{"attributes":{"overlay":{"id":"1156"}},"id":"1152","type":"BoxZoomTool"},{"attributes":{"axis":{"id":"1049"},"coordinates":null,"group":null,"ticker":null},"id":"1052","type":"Grid"},{"attributes":{},"id":"1150","type":"PanTool"},{"attributes":{},"id":"1043","type":"DataRange1d"},{"attributes":{},"id":"1155","type":"HelpTool"},{"attributes":{"axis_label":"Path","axis_label_text_font_size":"15pt","coordinates":null,"formatter":{"id":"1071"},"group":null,"major_label_orientation":1.5707963267948966,"major_label_policy":{"id":"1085"},"major_label_text_font_size":"10pt","ticker":{"id":"1093"}},"id":"1049","type":"LinearAxis"},{"attributes":{},"id":"1086","type":"UnionRenderers"},{"attributes":{},"id":"1058","type":"WheelZoomTool"},{"attributes":{},"id":"1085","type":"AllLabels"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},"id":"1186","type":"FixedTicker"},{"attributes":{"toolbars":[{"id":"1064"},{"id":"1157"}],"tools":[{"id":"1057"},{"id":"1058"},{"id":"1059"},{"id":"1060"},{"id":"1061"},{"id":"1062"},{"id":"1091"},{"id":"1150"},{"id":"1151"},{"id":"1152"},{"id":"1153"},{"id":"1154"},{"id":"1155"},{"id":"1184"}]},"id":"1207","type":"ProxyToolbar"},{"attributes":{"axis_label":"Ratio","axis_label_text_font_size":"15pt","coordinates":null,"formatter":{"id":"1175"},"group":null,"major_label_policy":{"id":"1176"},"major_label_text_font_size":"10pt","ticker":{"id":"1147"}},"id":"1146","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.1},"hatch_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"top":{"field":"Ratio"},"width":{"value":0.7},"x":{"field":"__x__values","transform":{"id":"1073"}}},"id":"1076","type":"VBar"},{"attributes":{},"id":"1147","type":"BasicTicker"},{"attributes":{"axis":{"id":"1146"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"1149","type":"Grid"}],"root_ids":["1209"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('1418').textContent;
+                  const render_items = [{"docid":"761c8619-7a6b-4097-93c1-4f54ec9bd7de","root_ids":["1209"],"roots":{"1209":"7f016551-707e-4f6c-a22f-33a5256b54c5"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
