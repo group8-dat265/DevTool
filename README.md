@@ -8,7 +8,7 @@ The user can set various sorting options for the graph or create sub graphs for 
 for available commands.
 
 Example graph:
-![See examples/coverage_graph.png](https://github.com/group8-dat265/DevTool/blob/master/image.jpg?raw=true)
+![See examples/coverage_graph.png](https://github.com/group8-dat265/DevTool/blob/master/examples/coverage_graph.png?raw=true)
 
 ## Installation
 Install Python3
