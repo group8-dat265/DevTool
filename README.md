@@ -11,11 +11,12 @@ Example graph:
 ![See /example/coverage_graph.pngg](https://github.com/group8-dat265/DevTool/blob/master/example/coverage_graph.png)
 
 ## Installation
-Install Python3
-
-Install dependencies with the command ```pip install -r requirements.txt``` (could also be pip3).
+Install Python3 and Pip3 (usually included).
 
 Clone the repository from GitHub.
+
+Install all dependencies by navigating to the root of the project and executing the command 
+```pip install -r requirements.txt``` (could also be pip3).
 
 ## How to use
 To test the tool simply run ```python dev_tool.py -f example/coverage_table.txt```.
@@ -33,23 +34,24 @@ file.
 optional arguments:
   -h, --help            show this help message and exit
   -f IN_FILE, --in_file IN_FILE
-                        Input file, default "coverage_table.txt"
+                        Input file, default "coverage_table.txt".
   -o OUT_FILE, --out_file OUT_FILE
-                        Output file, default "coverage_graph.html" or ".png" if non interactive
-  -r, --ratio           Sort x-axis by coverage ratio, default sort by x-label
-  -d, --descending      Ascending sort, default ascending
-  -ns, --no_sort        Skip sort (ignores other sort args), default False
+                        Output file, default "coverage_graph.html" or ".png" if non interactive.
+  -r, --ratio           Sort x-axis by coverage ratio, default sort by x-label.
+  -d, --descending      Descending sort, default ascending.
+  -ns, --no_sort        Skip sort (ignores other sort args), default False.
   -cl, --centered_labels
                         Center labels, default False
   -ni, --non_interactive
                         Generate non interactive graph using pandas instead of pandas_bokeh, doesnt support package
-                        graphs, default False
+                        graphs, default False.
   -p PLOT_PACKAGE, --plot_package PLOT_PACKAGE
-                        Plot given packages separated by "," , default plots everything in one graph
-  -nc, --no_complete    No graph with ratio for all paths, default False
+                        Plot given packages separated by ",", default plots everything in one graph.
+  -nc, --no_complete    Will not generate a graph with ratio for all files, default False.
   -s SEPARATOR, --separator SEPARATOR
-                        File column separator, default "|"
+                        Input file column separator, default "|".
   -sr SKIP_ROWS, --skip_rows SKIP_ROWS
-                        Lines to skip in file, default 1
+                        Lines to skip in input file, default 1.
 ```
-<!-- [![Open in CodeLab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/group8-dat265/DevTool/blob/master/Dev_Tool.ipynb) -->
+<!-- [![Open in CodeLab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/github/group8-dat265/DevTool/blob/master/Dev_Tool.ipynb) -->
