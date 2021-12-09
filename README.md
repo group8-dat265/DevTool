@@ -1,5 +1,15 @@
 # DevTool Group 8
 
+This tool creates bar graphs for code coverage. This tool parses an input file containing test coverage data generated 
+by for example [lcov](http://ltp.sourceforge.net/coverage/lcov.php) and then creates a bar graph showing the code 
+coverage ratio for each file in the data set.
+
+The user can set various sorting options for the graph or create sub graphs for matching packages. See Options section
+for available commands.
+
+Example graph:
+![See examples/coverage_graph.png](https://github.com/group8-dat265/DevTool/blob/master/image.jpg?raw=true)
+
 ## Installation
 Install Python3
 
