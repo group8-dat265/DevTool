@@ -1,0 +1,10 @@
+Reading tracefile coverage.info
+                                          |Lines       |Functions  |Branches    
+Filename                                  |Rate     Num|Rate    Num|Rate     Num
+================================================================================
+[/__w/libSMCE/libSMCE/]
+src/SMCE/Toolchain.cpp                    |75.6%    172|73.3%    15|    -      0
+src/SMCE/UDDRuntime.cpp                   | 100%      2| 100%     1|    -      0
+src/SMCE/Uuid.cpp                         | 100%     21| 100%     5|    -      0
+================================================================================
+                                    Total:|57.1%   1620|48.1%   364|    -      0

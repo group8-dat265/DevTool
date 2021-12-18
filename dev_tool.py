@@ -142,7 +142,7 @@ def create_plots(plot_datas: list, sort: bool, sort_by_ratio: bool, ascending: b
             else:
                 title = 'Code coverage for "{}" package'.format(plot_data.iloc[0]['Matching Package'])
             plots.append(
-                plot_data.plot_bokeh(kind='bar', figsize=(50 + len(plot_data.index) * 25, 700), title=title,
+                plot_data.plot_bokeh(kind='bar', figsize=(max(50 + len(plot_data.index) * 25, 300), 700), title=title,
                                      xlabel='Path', ylabel='Ratio', legend=False, vertical_xlabel=True,
                                      fontsize_label=15, fontsize_ticks=10, show_figure=False))
     return plots
